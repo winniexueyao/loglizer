@@ -21,7 +21,7 @@ epsilon = 0.5 # threshold for estimating invariant space
 
 if __name__ == '__main__':
     # Load structured log without label info
-    (x_train, _), (x_test, _) = dataloader.load_HDFS(struct_log,
+    (x_train, _), (x_test, _),_ = dataloader.load_HDFS(struct_log,
                                                      window='session', 
                                                      train_ratio=0.5,
                                                      split_type='sequential')
